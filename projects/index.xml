@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Minna</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on Minna</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cailar &amp;Carla色彩學習之教學產品</title>
+      <link>/projects/cailar-carla/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/cailar-carla/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slime Strategy</title>
+      <link>/projects/slime-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/slime-strategy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
