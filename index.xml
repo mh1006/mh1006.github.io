@@ -7,20 +7,28 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cailar &amp;Carla色彩學習之教學產品</title>
-      <link>/projects/cailar-carla/</link>
+      <link>/projects/cailar_carla/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/cailar-carla/</guid>
-      <description></description>
+      <guid>/projects/cailar_carla/</guid>
+      <description>內容組成 色彩感測器、繪本與手機APP。
+手機APP頁面 實測照片 負責的部分 此APP我們是以Flutter進行開發，搭配我們感測器做連線使用。
+此專題我所負責的部分是：
+●負責電子元件的選擇與使用
+●連接我們感測器中NodeMcu32s與手機APP（傳遞讀取數據）
+●負責顏色排序遊戲的程式撰寫</description>
     </item>
     
     <item>
       <title>Slime Strategy</title>
-      <link>/projects/slime-strategy/</link>
+      <link>/projects/slime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/slime-strategy/</guid>
-      <description></description>
+      <guid>/projects/slime/</guid>
+      <description>遊戲連結 點此遊玩遊戲
+遊玩影片 負責的部分 此專題我所負責的部分是：
+●遊戲主題與玩法的發想
+●負責遊戲的介面設計</description>
     </item>
     
     <item>
