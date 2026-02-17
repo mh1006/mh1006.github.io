@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Ming-Hua Hsieh</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Ming-Hua Hsieh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cailar &amp; Calra</title>
+      <link>http://localhost:1313/projects/cailar-calra/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/cailar-calra/</guid>
+      <description>&lt;h2 id=&#34;product-overview&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#product-overview&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    Product Overview&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;In Taiwan, there is a growing emphasis on art education, yet a significant gap in students’ understanding and exploration of color concepts. &lt;strong&gt;Cailar &amp;amp; Carla&lt;/strong&gt; aimed to bridge this gap by creating an interactive learning product to introduce elementary students to the fundamentals of color theory.&lt;/p&gt;&#xA;&lt;p&gt;Cailar &amp;amp; Carla is an interactive color learning product designed for elementary students (&lt;strong&gt;ages 7–11&lt;/strong&gt;) to explore color theory through hands-on play.&#xA;By integrating a &lt;strong&gt;plush tactile&lt;/strong&gt; controller and an accompanying physical &lt;strong&gt;picture book&lt;/strong&gt; with a &lt;strong&gt;gamified mobile app&lt;/strong&gt;, children can capture colors from their real-world environment to solve challenges. This multimodal approach addresses the lack of engaging, depth-oriented color education in current curriculums.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Slime Strategy</title>
+      <link>http://localhost:1313/projects/slime-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/slime-strategy/</guid>
+      <description>&lt;h2 id=&#34;product-overview&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#product-overview&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    Product Overview&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Many strategy games on the market either require significant time investment or are overly simplistic. As a result, people with limited time often choose other game genres for relaxation, leading them to avoid strategy games altogether.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Slime Strategy&lt;/strong&gt; is a strategy game that combines a compelling storyline with easy accessibility, allowing players to learn the game mechanics in just 5 minutes and complete it within a total playtime of 30 minutes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

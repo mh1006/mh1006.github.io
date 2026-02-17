@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en"
+  data-cb-collapse-enabled=""
+  data-cb-collapse-default=""
+  data-cb-collapse-lines=""
+  data-cb-collapse-auto-height=""
+  data-cb-collapse-collapsed-height="">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Cailar &amp; Calra | Ming-Hua Hsieh</title>
+
+<meta name="description" content="Make every corner a space for exploring colors!" />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/icons/photoIcon.png" />
+
+
+
+
+  <link rel="apple-touch-icon" href="#ZgotmplZ" />
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <link rel="manifest" href="http://localhost:1313/manifest.webmanifest" />
+    
+  
+
+
+<link rel="stylesheet" href="/css/main.css"> 
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css"
+  >
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/css/justifiedGallery.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ theme: "dark" });
+</script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var systemDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var defaultTheme =
+        'dark';
+
+      var theme =
+        stored ||
+        (defaultTheme === "dark"
+          ? "dark"
+          : defaultTheme === "light"
+          ? "light"
+          : systemDark
+          ? "dark"
+          : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+
+
+
+
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header class="pt-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    
+    <div class="nav-shell">
+      <div class="nav-inner">
+        
+        <a href="/" class="flex items-center gap-2">
+          
+            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-surface">
+              <img
+                src="/icons/photo.jpg"
+                alt="Ming-Hua Hsieh"
+                class="h-full w-full object-cover"
+              >
+            </div>
+          
+          <span class="text-xs font-semibold tracking-wide">
+            Ming-Hua Hsieh
+          </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          
+          <nav class="hidden items-center gap-5 md:flex">
+              <a
+                href="/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-solid fa-house text-[0.75rem]"></i>
+                
+                <span>Home</span>
+              </a>
+              <a
+                href="/about/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-user text-[0.75rem]"></i>
+                
+                <span>About</span>
+              </a>
+              <a
+                href="/projects/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-folder-open text-[0.75rem]"></i>
+                
+                <span>Projects</span>
+              </a>
+          </nav>
+
+          
+          <button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  data-theme-toggle
+>
+  <span data-theme-icon-light style="display: none">
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M8.05 15.95l-1.414 1.414m0-11.314L8.05 8.05m9.9 9.9-1.414-1.414"
+      />
+    </svg>
+  </span>
+
+  <span data-theme-icon-dark>
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z" />
+    </svg>
+  </span>
+</button>
+
+
+          
+          <button
+            type="button"
+            class="ml-1 inline-flex items-center justify-center rounded-full border border-border bg-bg p-2 text-muted shadow-sm hover:text-accent md:hidden"
+            aria-label="Toggle navigation"
+            data-mobile-nav-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto mt-2 max-w-7xl px-4 sm:px-6 md:hidden">
+    <nav
+      class="hidden rounded-2xl border border-border bg-surface px-4 py-3 text-sm text-muted shadow-md"
+      data-mobile-nav
+    >
+      
+        <a href="/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-solid fa-house text-[0.8rem]"></i>
+          
+          <span>Home</span>
+        </a>
+      
+        <a href="/about/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-user text-[0.8rem]"></i>
+          
+          <span>About</span>
+        </a>
+      
+        <a href="/projects/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-folder-open text-[0.8rem]"></i>
+          
+          <span>Projects</span>
+        </a>
+      
+    </nav>
+  </div>
+</header>
+
+
+      <main class="flex-1">
+        
+  <section class="layout-page section-stack">
+    <div class="article-layout">
+      <article class="article-main space-y-4">
+        <header class="space-y-2">
+          <h1 class="heading-page text-2xl sm:text-3xl">Cailar &amp; Calra</h1>
+
+          <div class="text-[0.75rem] text-muted">
+            
+            
+              <span> • 4 min read</span>
+            
+
+          
+            
+            
+            
+              <span>
+                Sep 2020 – Dec 2021
+              </span>
+            
+
+          </div>
+
+          
+            <p class="max-w-xl text-sm text-muted">
+              Make every corner a space for exploring colors!
+            </p>
+          
+        </header>
+
+        <div class="card card-pad">
+          <div class="markdown-body">
+            <h2 id="product-overview">
+  <a href="#product-overview" class="md-heading-anchor">
+    Product Overview
+  </a>
+</h2>
+<p>In Taiwan, there is a growing emphasis on art education, yet a significant gap in students’ understanding and exploration of color concepts. <strong>Cailar &amp; Carla</strong> aimed to bridge this gap by creating an interactive learning product to introduce elementary students to the fundamentals of color theory.</p>
+<p>Cailar &amp; Carla is an interactive color learning product designed for elementary students (<strong>ages 7–11</strong>) to explore color theory through hands-on play.
+By integrating a <strong>plush tactile</strong> controller and an accompanying physical <strong>picture book</strong> with a <strong>gamified mobile app</strong>, children can capture colors from their real-world environment to solve challenges. This multimodal approach addresses the lack of engaging, depth-oriented color education in current curriculums.</p>
+<hr>
+<h2 id="research">
+  <a href="#research" class="md-heading-anchor">
+    Research
+  </a>
+</h2>
+<h3 id="background-research">
+  <a href="#background-research" class="md-heading-anchor">
+    Background Research
+  </a>
+</h3>
+<p>We conducted a comprehensive literature review on arts education and digital teaching products, focusing on curriculum guidelines and relevant literature, and summarized the following finding:</p>
+<div style="display: flex; justify-content: center; text-align: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+  <div style="flex:0 1 180px; display: flex; flex-direction: column; align-items: center;">
+    <div style="background: transparent; width: 100px; height: 100px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: none;">
+      <img src="/image/CarlaCaila/magic_book.png" style="width: 70px; border: none !important; outline: none !important; box-shadow: none !important;">
+    </div>
+     <h3 style="font-weight: bold; margin-bottom: 8px;">Art Education</h3>
+    <p style="font-size: 0.9em; color: #bbbbbb; margin: 0; line-height: 1.4;">Establishes connections with students’ life experiences and promotes learning through real-world applications.</p>
+  </div>
+  <div style="flex:0 1 180px; display: flex; flex-direction: column; align-items: center;">
+    <div style="background: transparent; width: 100px; height: 100px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: none;">
+      <img src="/image/CarlaCaila/color_wheel.png" style="width: 70px; border: none !important; outline: none !important; box-shadow: none !important;">
+    </div>
+     <h3 style="font-weight: bold; margin-bottom: 8px;">Color-Related Knowledge</h3>
+    <p style="font-size: 0.9em; color: #bbbbbb; margin: 0; line-height: 1.4;">Emphasizes the concepts of hue, saturation, and brightness.</p>
+  </div>
+  <div style="flex:0 1 180px; display: flex; flex-direction: column; align-items: center;">
+    <div style="background: transparent; width: 100px; height: 100px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: none;">
+      <img src="/image/CarlaCaila/games.png" style="width: 70px; border: none !important; outline: none !important; box-shadow: none !important;">
+    </div>
+     <h3 style="font-weight: bold; margin-bottom: 8px;">Game-Based Learning </h3>
+    <p style="font-size: 0.9em; color: #bbbbbb; margin: 0; line-height: 1.4;">Enhances learner motivation and improves educational outcomes through immersive, interactive teaching methods. </p>
+  </div>
+</div>
+<h3 id="design-goal">
+  <a href="#design-goal" class="md-heading-anchor">
+    Design Goal
+  </a>
+</h3>
+<p>Based on the literature review findings, we integrated the following three features into our product design to enhance its educational value:</p>
+<div style="display: flex; justify-content: space-around; text-align: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
+  <div class="hover-float-item" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s ease;">
+    <div style="background: white; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: none;">
+      <img src="/image/CarlaCaila/link.png" style="width: 50px; filter: brightness(0); border: none; outline: none; box-shadow: none;">
+    </div>
+    <p style="font-size: 0.9em; opacity: 0.7;">Connecting Picture Books with Products</p>
+  </div>
+  <div class="hover-float-item" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s ease;">
+    <div style="background: white; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: none;">
+      <img src="/image/CarlaCaila/imaging.png" style="width: 50px; filter: brightness(0); border: none; outline: none; box-shadow: none;">
+    </div>
+    <p style="font-size: 0.9em; opacity: 0.7;">Concept Visualization</p>
+  </div>
+  <div class="hover-float-item" style="flex: 1; min-width: 200px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s ease;">
+    <div style="background: white; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: none;">
+      <img src="/image/CarlaCaila/smartphone.png" style="width: 50px; filter: brightness(0); border: none; outline: none; box-shadow: none;">
+    </div>
+    <p style="font-size: 0.9em; opacity: 0.7;">Independent App Functionality</p>
+  </div>
+</div>
+<style>
+  /* 處理滑鼠移上去的微微浮起效果 */
+  .hover-float-item:hover {
+    transform: translateY(-10px);
+  }
+  /* 強制移除圖片可能產生的任何預設邊框 */
+  .hover-float-item img {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+</style>
+<h2 id="research-1">
+  <a href="#research-1" class="md-heading-anchor">
+    Research
+  </a>
+</h2>
+<p>Currently, color-related products on the market can be classified into two main categories: educational and technological. Our goal is to design a product that bridges these two areas by combining the strengths, integrating technology, education, playfulness, and color.</p>
+<div style="display: flex; justify-content: center; text-align: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; background-color: #FFF9E6; padding: 25px 10px; border-radius: 20px;">
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
+      <img src="/image/CarlaCaila/cpu.png" style="width: 80px; border: none !important; border-radius: 0 !important;">
+    </div>
+    <p style="font-size: 0.8em; color: #000000; margin: 0;">Technology</p>
+  </div>
+  <div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 80px; padding: 0 5px;">
+    <img src="/image/CarlaCaila/plus.png" style="width: 30px; border: none !important; outline: none !important; box-shadow: none !important;">
+  </div>
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
+      <img src="/image/CarlaCaila/teachings.png" style="width: 80px; border: none !important; border-radius: 0 !important;">
+    </div>
+    <p style="font-size: 0.8em; color: #000000; margin: 0;">Education</p>
+  </div>
+  <div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 80px; padding: 0 5px;">
+    <img src="/image/CarlaCaila/plus.png" style="width: 30px; border: none !important; outline: none !important; box-shadow: none !important;">
+  </div>
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
+      <img src="/image/CarlaCaila/dancing.png" style="width: 80px; border: none !important; border-radius: 0 !important;">
+    </div>
+    <p style="font-size: 0.8em; color: #000000; margin: 0;">Playfulness</p>
+  </div>
+  <div style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 80px; padding: 0 5px;">
+    <img src="/image/CarlaCaila/plus.png" style="width: 30px; border: none !important; outline: none !important; box-shadow: none !important;">
+  </div>
+  <div style="flex: 0 0 auto; display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;">
+      <img src="/image/CarlaCaila/color_wheel2.png" style="width: 80px; border: none !important; border-radius: 0 !important;">
+    </div>
+    <p style="font-size: 0.8em; color: #000000; margin: 0;">Color</p>
+  </div>
+</div>
+<h3 id="competitor-analysis">
+  <a href="#competitor-analysis" class="md-heading-anchor">
+    Competitor Analysis
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/competitorAnalysis.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/competitorAnalysis.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h2 id="concept-sketch">
+  <a href="#concept-sketch" class="md-heading-anchor">
+    Concept Sketch
+  </a>
+</h2>
+<h3 id="1-concept">
+  <a href="#1-concept" class="md-heading-anchor">
+    1. Concept
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/sketch1.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/sketch1.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="2-shape-evolution">
+  <a href="#2-shape-evolution" class="md-heading-anchor">
+    2. Shape Evolution
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/sketch2.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/sketch2.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="3-circuit-evolution">
+  <a href="#3-circuit-evolution" class="md-heading-anchor">
+    3. Circuit Evolution
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/sketch3.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/sketch3.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="4-detail-enhancement">
+  <a href="#4-detail-enhancement" class="md-heading-anchor">
+    4. Detail Enhancement
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/sketch4.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/sketch4.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="5-mobile-app-interface">
+  <a href="#5-mobile-app-interface" class="md-heading-anchor">
+    5. Mobile App Interface
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/sketch5.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/sketch5.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h2 id="final-design">
+  <a href="#final-design" class="md-heading-anchor">
+    Final Design
+  </a>
+</h2>
+<p>The product is divided into three parts.
+<figure class="md-image">
+  <a href="/image/CarlaCaila/product.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/product.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="key-features">
+  <a href="#key-features" class="md-heading-anchor">
+    Key Features
+  </a>
+</h3>
+<ul>
+<li><strong>Tangible Interaction</strong>: A plush-covered device that encourages children (<strong>ages 7–11</strong>) to explore their surroundings physically.</li>
+<li><strong>Gamified Pedagogy</strong>: Transforms abstract color theory into an engaging story-driven game.</li>
+<li><strong>Full-Stack Implementation</strong>: Managed the end-to-end data pipeline from physical hardware sensors to an interactive mobile interface, ensuring seamless data flow and system stability.</li>
+</ul>
+<h3 id="picture-book">
+  <a href="#picture-book" class="md-heading-anchor">
+    Picture Book
+  </a>
+</h3>
+<p>Used with the color sensor for an enhanced learning experience.</p>
+<p>The story follows a quest to find lost colors, gradually introducing concepts such as color theory, color mixing, HSL, and complementary colors and other related topics. This journey culminates in a lively carnival where characters engage in various color-themed games.
+<figure class="md-image">
+  <a href="/image/CarlaCaila/picBook.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/picBook.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="mobile-app">
+  <a href="#mobile-app" class="md-heading-anchor">
+    Mobile App
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/mobileApp.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/mobileApp.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="color-sensor">
+  <a href="#color-sensor" class="md-heading-anchor">
+    Color Sensor
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/colorSensor.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/colorSensor.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h4 id="hardware-circuit-design">
+  <a href="#hardware-circuit-design" class="md-heading-anchor">
+    Hardware Circuit Design
+  </a>
+</h4>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/circuitDiagram.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/circuitDiagram.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<ul>
+<li><strong>Environmental Adaptability</strong>: The integrated <strong>LED Light Reinforcement</strong> compensates for insufficient ambient light.</li>
+<li><strong>Power Efficiency</strong>: The circuit uses a step-down module to convert 9V input into the precise voltage required for the ESP32 and sensors, ensuring long-term stability.</li>
+<li><strong>Low-Latency Feedback</strong>: The system is optimized to transmit sensed data to the <strong>Flutter App</strong> immediately upon button press, creating a responsive learning loop for children.</li>
+</ul>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/howToUse.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/howToUse.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h2 id="product-testing">
+  <a href="#product-testing" class="md-heading-anchor">
+    Product testing
+  </a>
+</h2>
+<h3 id="participants">
+  <a href="#participants" class="md-heading-anchor">
+    Participants
+  </a>
+</h3>
+<ul>
+<li>Total: 10 students</li>
+<li>Age range: 7 to 11 years old</li>
+</ul>
+<h3 id="testing-format">
+  <a href="#testing-format" class="md-heading-anchor">
+    Testing Format
+  </a>
+</h3>
+<ul>
+<li>Conducted in one-on-one or one-on-two sessions</li>
+<li>Each session lasted approximately 40 minutes</li>
+</ul>
+<h3 id="testing-process">
+  <a href="#testing-process" class="md-heading-anchor">
+    Testing Process
+  </a>
+</h3>
+<ul>
+<li><strong>Pre-Test:</strong> Assessed students&rsquo; existing knowledge of color concepts.</li>
+<li><strong>Storybook Teaching:</strong> Introduced color knowledge through engaging storytelling.</li>
+<li><strong>Game Experience:</strong> Allowed students to interact with the product and explore game features.</li>
+<li><strong>Post-Test:</strong>
+<ul>
+<li>Reassessed students&rsquo; color knowledge</li>
+<li>Evaluated learning outcomes</li>
+<li>Gathered feedback on product usability</li>
+</ul>
+</li>
+</ul>
+<p><figure class="md-image">
+  <a href="/image/CarlaCaila/usabilityTest.png" class="glightbox">
+    <img
+      src="/image/CarlaCaila/usabilityTest.png"
+      alt="Circuit Diagram"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<p>Before testing, most students had limited color knowledge, and older students did not necessarily possess more understanding of color concepts.</p>
+<h3 id="what-worked-well">
+  <a href="#what-worked-well" class="md-heading-anchor">
+    What Worked Well
+  </a>
+</h3>
+<p>The game offers various difficulty levels.</p>
+<ul>
+<li>Older students can engage with advanced levels and avoid boredom.</li>
+<li>Younger students can enjoy simpler levels, finding fun in the game.</li>
+</ul>
+<h3 id="what-could-be-enhanced">
+  <a href="#what-could-be-enhanced" class="md-heading-anchor">
+    What Could Be Enhanced
+  </a>
+</h3>
+<p>Simplify color knowledge instruction for better understanding.</p>
+<ul>
+<li>Some students are still confused of the content after the instruction.</li>
+<li>Younger students required additional guidance to understand certain concepts.
+Improve button design to make the indicator mark more visible and the button easier to press.</li>
+</ul>
+<p><strong>Overall students provided positive feedback on our product.</strong></p>
+<hr>
+<h2 id="tech-stack">
+  <a href="#tech-stack" class="md-heading-anchor">
+    Tech Stack
+  </a>
+</h2>
+<h3 id="hardware--firmware">
+  <a href="#hardware--firmware" class="md-heading-anchor">
+    <strong>Hardware / Firmware</strong>
+  </a>
+</h3>
+<ul>
+<li><strong>Controller</strong>: ESP32 (NodeMCU32S).</li>
+<li><strong>Sensor</strong>: TCS34725 Color Sensor.</li>
+<li><strong>Environment</strong>: Arduino IDE (C/C++).</li>
+<li><strong>Protocol</strong>: Bluetooth Low Energy (BLE).</li>
+</ul>
+<h3 id="software--mobile">
+  <a href="#software--mobile" class="md-heading-anchor">
+    <strong>Software / Mobile</strong>
+  </a>
+</h3>
+<ul>
+<li><strong>Framework</strong>: Flutter (Dart).</li>
+<li><strong>UI/UX Design</strong>: Adobe Illustrator.</li>
+</ul>
+<hr>
+<h2 id="contribution">
+  <a href="#contribution" class="md-heading-anchor">
+    Contribution
+  </a>
+</h2>
+<h3 id="individual-responsibilities">
+  <a href="#individual-responsibilities" class="md-heading-anchor">
+    Individual Responsibilities
+  </a>
+</h3>
+<ul>
+<li><strong>Project leader &amp;  Lead Developer</strong></li>
+<li><strong>Sensor Electronics Design</strong>: Selected components, planned circuitry, and oversaw integration of internal electronic components for sensor functionality.</li>
+<li><strong>Programming</strong>: Developed sensor coding, established data transfer from sensors to the mobile app, and created static &amp; networked games for the app.</li>
+</ul>
+<h3 id="collaborative-responsibilities">
+  <a href="#collaborative-responsibilities" class="md-heading-anchor">
+    Collaborative Responsibilities
+  </a>
+</h3>
+<ul>
+<li>Concept Development</li>
+<li>Preliminary Research</li>
+<li>Product Testing</li>
+</ul>
+<hr>
+<h2 id="team--acknowledgments">
+  <a href="#team--acknowledgments" class="md-heading-anchor">
+    Team &amp; Acknowledgments
+  </a>
+</h2>
+<p>This project received the <strong>Honorable Mention Award</strong> in the Graduation Project Competition.</p>
+<ul>
+<li><strong>Team Members</strong>: <strong>Ming-Hua Hsieh</strong>, Ching-Yung Fan, Hsin-Yu Tsai, Po-Yin Pan, and Li-Han Lin.</li>
+<li><strong>Supervisor</strong>: Kun-Yi Lin (<a
+  href="mailto:linkuenyi@ntnu.edu.tw"
+  
+  class="md-link"
+>
+  linkuenyi@ntnu.edu.tw
+</a>
+)</li>
+<li><strong>Institution</strong>: National Taiwan Normal University (NTNU), Taipei, Taiwan</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+
+      
+        <aside class="article-toc">
+          <div class="toc-wrapper">
+            <div class="toc-header">
+              <h3 class="toc-title">
+                <i class="fas fa-list-ul"></i>
+                <span>Table of Contents</span>
+              </h3>
+              <button class="toc-toggle" aria-label="Toggle table of contents">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <nav class="toc-nav">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#product-overview">Product Overview</a></li>
+    <li><a href="#research">Research</a>
+      <ul>
+        <li><a href="#background-research">Background Research</a></li>
+        <li><a href="#design-goal">Design Goal</a></li>
+      </ul>
+    </li>
+    <li><a href="#research-1">Research</a>
+      <ul>
+        <li><a href="#competitor-analysis">Competitor Analysis</a></li>
+      </ul>
+    </li>
+    <li><a href="#concept-sketch">Concept Sketch</a>
+      <ul>
+        <li><a href="#1-concept">1. Concept</a></li>
+        <li><a href="#2-shape-evolution">2. Shape Evolution</a></li>
+        <li><a href="#3-circuit-evolution">3. Circuit Evolution</a></li>
+        <li><a href="#4-detail-enhancement">4. Detail Enhancement</a></li>
+        <li><a href="#5-mobile-app-interface">5. Mobile App Interface</a></li>
+      </ul>
+    </li>
+    <li><a href="#final-design">Final Design</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+        <li><a href="#picture-book">Picture Book</a></li>
+        <li><a href="#mobile-app">Mobile App</a></li>
+        <li><a href="#color-sensor">Color Sensor</a>
+          <ul>
+            <li><a href="#hardware-circuit-design">Hardware Circuit Design</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#product-testing">Product testing</a>
+      <ul>
+        <li><a href="#participants">Participants</a></li>
+        <li><a href="#testing-format">Testing Format</a></li>
+        <li><a href="#testing-process">Testing Process</a></li>
+        <li><a href="#what-worked-well">What Worked Well</a></li>
+        <li><a href="#what-could-be-enhanced">What Could Be Enhanced</a></li>
+      </ul>
+    </li>
+    <li><a href="#tech-stack">Tech Stack</a>
+      <ul>
+        <li><a href="#hardware--firmware"><strong>Hardware / Firmware</strong></a></li>
+        <li><a href="#software--mobile"><strong>Software / Mobile</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#contribution">Contribution</a>
+      <ul>
+        <li><a href="#individual-responsibilities">Individual Responsibilities</a></li>
+        <li><a href="#collaborative-responsibilities">Collaborative Responsibilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#team--acknowledgments">Team &amp; Acknowledgments</a></li>
+  </ul>
+</nav>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+        (function() {
+          'use strict';
+
+          const tocWrapper = document.querySelector('.toc-wrapper');
+          const tocToggle = document.querySelector('.toc-toggle');
+          const tocNav = document.querySelector('.toc-nav');
+          const tocLinks = document.querySelectorAll('.toc-nav a');
+
+          if (!tocWrapper || !tocNav) return;
+
+          
+          
+          
+          if (tocToggle) {
+            tocToggle.addEventListener('click', function() {
+              tocWrapper.classList.toggle('collapsed');
+            });
+          }
+
+          
+          
+          
+          tocLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                const yOffset = -80; 
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                  top: y,
+                  behavior: 'smooth'
+                });
+
+                
+                history.pushState(null, null, targetId);
+              }
+            });
+          });
+
+          
+          
+          
+          const headings = document.querySelectorAll('.markdown-body h1[id], .markdown-body h2[id], .markdown-body h3[id], .markdown-body h4[id], .markdown-body h5[id], .markdown-body h6[id]');
+
+          let activeHeading = null;
+          const observer = new IntersectionObserver(
+            (entries) => {
+              
+              const intersectingHeadings = [];
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  intersectingHeadings.push({
+                    element: entry.target,
+                    top: entry.boundingClientRect.top
+                  });
+                }
+              });
+
+              
+              if (intersectingHeadings.length > 0) {
+                
+                intersectingHeadings.sort((a, b) => Math.abs(a.top) - Math.abs(b.top));
+
+                const closestHeading = intersectingHeadings[0].element;
+                const id = closestHeading.getAttribute('id');
+
+                if (id && id !== activeHeading) {
+                  activeHeading = id;
+                  const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+                  if (tocLink) {
+                    
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    
+                    tocLink.classList.add('active');
+                  }
+                }
+              }
+            },
+            {
+              rootMargin: '-80px 0px -80%',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+            }
+          );
+
+          
+          headings.forEach((heading) => {
+            observer.observe(heading);
+          });
+
+          
+          if (tocLinks.length > 0) {
+            tocLinks[0].classList.add('active');
+            activeHeading = tocLinks[0].getAttribute('href').substring(1);
+          }
+        })();
+        </script>
+      
+    </div>
+  </section>
+
+      </main>
+
+      <footer class="pb-6 pt-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="footer-shell">
+      <div class="footer-inner">
+        
+        <div class="space-y-1">
+          <p class="footer-small">
+            &copy; 2026 Ming-Hua Hsieh — All rights
+            reserved.
+          </p>
+
+          <p class="footer-small flex flex-wrap items-center gap-1">
+            <span>Built with</span>
+
+            <a
+              href="https://gohugo.io/"
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Hugo</span>
+            </a>
+
+            <span>/</span>
+
+            <a
+              href=""
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Minimal&nbsp;Black</span>
+            </a>
+          </p>
+        </div>
+
+        
+        
+        <div class="footer-links">
+          
+          <a
+            href="https://github.com/mh1006"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github text-[0.8rem]"></i>
+            <span>GitHub</span>
+          </a>
+          
+          <a
+            href="https://www.linkedin.com/in/ming-hua-hsieh-56b91521a/"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in text-[0.8rem]"></i>
+            <span>LinkedIn</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="search-overlay" data-search-overlay>
+  <div class="search-overlay-backdrop" data-search-close></div>
+
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass text-[0.8rem] text-muted"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search posts..."
+          autocomplete="off"
+          data-search-input
+        />
+      </div>
+      <button
+        type="button"
+        class="search-close"
+        data-search-close
+        aria-label="Close search"
+      >
+        <i class="fa-solid fa-xmark text-[0.8rem]"></i>
+      </button>
+    </div>
+
+    <div class="search-panel-body">
+      <div class="search-results" data-search-results>
+        <div class="search-empty-state">
+          <div class="search-empty-icon">
+            <i class="fa-solid fa-magnifying-glass text-[1rem]"></i>
+          </div>
+          <p class="search-empty-title">Start searching</p>
+          <p class="search-empty-subtitle">
+            Enter keywords to search articles.
+          </p>
+        </div>
+      </div>
+
+      <div class="search-footer-hints">
+        <div class="search-hint-key">
+          <span>↑↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="search-hint-key">
+          <span>↵</span>
+          <span>Select</span>
+        </div>
+        <div class="search-hint-key">
+          <span>ESC</span>
+          <span>Close</span>
+        </div>
+        <div class="search-hint-key search-hint-right">
+          <span>Ctrl</span><span>K</span>
+          <span>Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dock" data-dock>
+  <div class="dock-inner">
+    
+    <div class="dock-panel" data-dock-panel>
+      
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="back"
+        aria-label="Go back"
+      >
+        <i class="fa-solid fa-arrow-left text-[0.7rem]"></i>
+      </button>
+      <span class="dock-divider" aria-hidden="true"></span>
+      
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="search"
+        aria-label="Search"
+        onclick="window.MinimalSearch && window.MinimalSearch.open()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-[0.7rem]"></i>
+      </button>
+
+      
+      <span class="dock-divider" aria-hidden="true"></span>
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="top"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-[0.7rem]"></i>
+      </button>
+    </div>
+
+    
+    <button
+      type="button"
+      class="dock-toggle"
+      aria-label="Open quick actions"
+      data-dock-toggle
+    >
+      <span class="dock-toggle-dots"></span>
+    </button>
+  </div>
+</div>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/js/justifiedGallery.min.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>
