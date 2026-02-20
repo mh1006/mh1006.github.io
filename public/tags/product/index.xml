@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Product on Ming-Hua Hsieh</title>
+    <link>http://localhost:1313/tags/product/</link>
+    <description>Recent content in Product on Ming-Hua Hsieh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ocean</title>
+      <link>http://localhost:1313/projects/ocean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ocean/</guid>
+      <description>&lt;h2 id=&#34;product-overviews&#34;&gt;&#xD;&#xA;  &lt;a href=&#34;#product-overviews&#34; class=&#34;md-heading-anchor&#34;&gt;&#xD;&#xA;    Product Overviews&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;In modern society, phone notifications frequently disrupt our concentration and can even affect our emotional well-being. This constant stream of alerts not only diverts our attention but also results in decreased productivity. Conversely, missing important messages often leads to feelings of anxiety. Therefore, it is essential to find an effective way to achieve balance.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Ocean&lt;/strong&gt; is an interactive device that helps users reduce anxiety caused by notification interruptions, enabling a more focused and mindful experience while they can receive important messages.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

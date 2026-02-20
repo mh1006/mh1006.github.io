@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en"
+  data-cb-collapse-enabled=""
+  data-cb-collapse-default=""
+  data-cb-collapse-lines=""
+  data-cb-collapse-auto-height=""
+  data-cb-collapse-collapsed-height="">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Ocean | Ming-Hua Hsieh</title>
+
+<meta name="description" content="Experience Focused Learning Like Never Before!" />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/icons/photoIcon.png" />
+
+
+
+
+  <link rel="apple-touch-icon" href="#ZgotmplZ" />
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <link rel="manifest" href="http://localhost:1313/manifest.webmanifest" />
+    
+  
+
+
+<link rel="stylesheet" href="/css/main.css"> 
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css"
+  >
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/css/justifiedGallery.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ theme: "dark" });
+</script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var systemDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var defaultTheme =
+        'dark';
+
+      var theme =
+        stored ||
+        (defaultTheme === "dark"
+          ? "dark"
+          : defaultTheme === "light"
+          ? "light"
+          : systemDark
+          ? "dark"
+          : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+
+
+
+
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header class="pt-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    
+    <div class="nav-shell">
+      <div class="nav-inner">
+        
+        <a href="/" class="flex items-center gap-2">
+          
+            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-surface">
+              <img
+                src="/icons/photo.jpg"
+                alt="Ming-Hua Hsieh"
+                class="h-full w-full object-cover"
+              >
+            </div>
+          
+          <span class="text-xs font-semibold tracking-wide">
+            Ming-Hua Hsieh
+          </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          
+          <nav class="hidden items-center gap-5 md:flex">
+              <a
+                href="/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-solid fa-house text-[0.75rem]"></i>
+                
+                <span>Home</span>
+              </a>
+              <a
+                href="/about/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-user text-[0.75rem]"></i>
+                
+                <span>About</span>
+              </a>
+              <a
+                href="/projects/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-folder-open text-[0.75rem]"></i>
+                
+                <span>Projects</span>
+              </a>
+          </nav>
+
+          
+          <button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  data-theme-toggle
+>
+  <span data-theme-icon-light style="display: none">
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M8.05 15.95l-1.414 1.414m0-11.314L8.05 8.05m9.9 9.9-1.414-1.414"
+      />
+    </svg>
+  </span>
+
+  <span data-theme-icon-dark>
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z" />
+    </svg>
+  </span>
+</button>
+
+
+          
+          <button
+            type="button"
+            class="ml-1 inline-flex items-center justify-center rounded-full border border-border bg-bg p-2 text-muted shadow-sm hover:text-accent md:hidden"
+            aria-label="Toggle navigation"
+            data-mobile-nav-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto mt-2 max-w-7xl px-4 sm:px-6 md:hidden">
+    <nav
+      class="hidden rounded-2xl border border-border bg-surface px-4 py-3 text-sm text-muted shadow-md"
+      data-mobile-nav
+    >
+      
+        <a href="/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-solid fa-house text-[0.8rem]"></i>
+          
+          <span>Home</span>
+        </a>
+      
+        <a href="/about/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-user text-[0.8rem]"></i>
+          
+          <span>About</span>
+        </a>
+      
+        <a href="/projects/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-folder-open text-[0.8rem]"></i>
+          
+          <span>Projects</span>
+        </a>
+      
+    </nav>
+  </div>
+</header>
+
+
+      <main class="flex-1">
+        
+  <section class="layout-page section-stack">
+    <div class="article-layout">
+      <article class="article-main space-y-4">
+        <header class="space-y-2">
+          <h1 class="heading-page text-2xl sm:text-3xl">Ocean</h1>
+
+          <div class="text-[0.75rem] text-muted">
+            
+            
+              <span> • 4 min read</span>
+            
+
+          
+            
+            
+            
+              <span>
+                Jul 2023 – Aug 2023
+              </span>
+            
+
+          </div>
+
+          
+            <p class="max-w-xl text-sm text-muted">
+              Experience Focused Learning Like Never Before!
+            </p>
+          
+        </header>
+
+        <div class="card card-pad">
+          <div class="markdown-body">
+            <h2 id="product-overviews">
+  <a href="#product-overviews" class="md-heading-anchor">
+    Product Overviews
+  </a>
+</h2>
+<p>In modern society, phone notifications frequently disrupt our concentration and can even affect our emotional well-being. This constant stream of alerts not only diverts our attention but also results in decreased productivity. Conversely, missing important messages often leads to feelings of anxiety. Therefore, it is essential to find an effective way to achieve balance.</p>
+<p><strong>Ocean</strong> is an interactive device that helps users reduce anxiety caused by notification interruptions, enabling a more focused and mindful experience while they can receive important messages.</p>
+<h2 id="user-research">
+  <a href="#user-research" class="md-heading-anchor">
+    User Research
+  </a>
+</h2>
+<p>We developed a survey focusing on FOMO and smartphone addiction, then selected the most relevant respondents for in-depth qualitative interviews.</p>
+<h3 id="survey-participation">
+  <a href="#survey-participation" class="md-heading-anchor">
+    Survey Participation
+  </a>
+</h3>
+<p>48 surveys was filtered and the 6 most relevant was selected.
+<figure class="md-image">
+  <a href="/image/Ocean/surveyParticipation.png" class="glightbox">
+    <img
+      src="/image/Ocean/surveyParticipation.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="persona">
+  <a href="#persona" class="md-heading-anchor">
+    Persona
+  </a>
+</h3>
+<p>The following Personas was created based on the interview results.
+<figure class="md-image">
+  <a href="/image/Ocean/persona.png" class="glightbox">
+    <img
+      src="/image/Ocean/persona.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="journey-map">
+  <a href="#journey-map" class="md-heading-anchor">
+    Journey Map
+  </a>
+</h3>
+<p>The user&rsquo;s emotional journey and pain points while trying to focus.
+<figure class="md-image">
+  <a href="/image/Ocean/journeyMap.png" class="glightbox">
+    <img
+      src="/image/Ocean/journeyMap.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="point-of-view">
+  <a href="#point-of-view" class="md-heading-anchor">
+    Point Of View
+  </a>
+</h3>
+<ul>
+<li>User: College students currently in their studies.</li>
+<li>Insight: They feel insecure when they miss important messages.</li>
+<li>Implication: Timely receipt of important messages is essential for their sense of security.</li>
+</ul>
+<hr>
+<h2 id="concept-development">
+  <a href="#concept-development" class="md-heading-anchor">
+    Concept Development
+  </a>
+</h2>
+<p><figure class="md-image">
+  <a href="/image/Ocean/conceptDevelopment.png" class="glightbox">
+    <img
+      src="/image/Ocean/conceptDevelopment.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<div style="display: grid; grid-template-columns: 3fr 4fr; gap: 30px; align-items: start;">
+  <div>
+    <h3>Brainstorming Solutions</h3>
+    <p>We brainstorm ideas to solve the problem and then use quadrant analysis to evaluate them based on feasibility and creativity.</p>
+  </div>
+  <div>
+    <h3>Choosing a Solution</h3>
+    <p>We chose a concept that is both feasible and creative "the mailbox" and developed related features based on this idea.</p>
+  </div>
+</div>
+<hr>
+<h2 id="design-goal">
+  <a href="#design-goal" class="md-heading-anchor">
+    Design Goal
+  </a>
+</h2>
+<p>Make notifications more manageable by categorizing them like mail, with messages received at different speeds.</p>
+<p>Important → Urgent mail </br>
+Unimportant →  Ordinary mail</p>
+<hr>
+<h2 id="sketch">
+  <a href="#sketch" class="md-heading-anchor">
+    Sketch
+  </a>
+</h2>
+<p>Despite the implementation of a solution mailbox, the issue of unwanted interruptions from unimportant messages persisted. After discussion and revision, in order to address the issue of excessive unnecessary messages, we linked cell phone messages to message in a bottle.</p>
+<h3 id="message-in-a-bottle">
+  <a href="#message-in-a-bottle" class="md-heading-anchor">
+    Message in a bottle
+  </a>
+</h3>
+<p><strong>Important message →  Float on the sea surface.</strong> </br>
+<strong>Unimportant →  Sink to the bottom of the sea.</strong></p>
+<p>We also added a spinning cork to create a ritualistic element.</p>
+<ol>
+<li>
+<p><strong>The device of Ocean</strong> </br>
+Creating a sense of routine can assist individuals in entering a learning state more efficiently. Users must place their phones on the device to activate the app and adjust the reading time by rotating the bottle cap, which also aids in the creation of a pre-reading ritual.
+<img src="/image/Ocean/bottle.png" alt="Product" width="300"></p>
+</li>
+<li>
+<p><strong>Simulated message transmission device</strong> </br>
+We used two buttons to simulate message transmission from different contacts to the app, allowing us to easily showcase different outcomes.
+<img src="/image/Ocean/buttons.png" alt="Product" width="250"></p>
+</li>
+<li>
+<p>Sketches of the user interface of Ocean’s app.
+<figure class="md-image">
+  <a href="/image/Ocean/UI.png" class="glightbox">
+    <img
+      src="/image/Ocean/UI.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+</li>
+</ol>
+<hr>
+<h2 id="final-design">
+  <a href="#final-design" class="md-heading-anchor">
+    Final Design
+  </a>
+</h2>
+<div style="display: grid; grid-template-columns: 1fr 2fr; gap: 30px; align-items: start;">
+  <div>
+    <h3>1. Setting up contacts</h3>
+    <p>Receive messages from up to three contacts</p>
+  </div>
+  <div>
+    <h3>2. Place your phone</h3>
+    <p>Launching the Ocean App will automatically restrict other apps.</p>
+  </div>
+</div>
+<p><figure class="md-image">
+  <a href="/image/Ocean/stepA.png" class="glightbox">
+    <img
+      src="/image/Ocean/stepA.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3>3. Set up timer</h3>
+    <p>Press the start button to begin the countdown.</p>
+<img src="/image/Ocean/stepB.png" alt="Product" width="400">
+<h3>4. Receive messages</h3>
+    <p>Messages will display different statuses depending on the contact.</p>
+<h4>Important</h4>
+Message will float on the surface of the sea and display their content.
+<img src="/image/Ocean/stepC.png" alt="Product" width="400">
+<h4>Unimportant</h4>
+Messages will sink to the bottom of the sea and disappear.
+<img src="/image/Ocean/stepD.png" alt="Product" width="400">
+<h3>5. Receive study reward</h3>
+    <p>Immediate positive feedback helps fosters a sense of achievement.</p>
+<img src="/image/Ocean/stepE.png" alt="Product" width="400">
+<h3>6. Create your own ocean</h3>
+    <p>Visit the store to exchange for decorations and create an under water wonderland.</p>
+<p><figure class="md-image">
+  <a href="/image/Ocean/stepF.png" class="glightbox">
+    <img
+      src="/image/Ocean/stepF.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="how-to-use">
+  <a href="#how-to-use" class="md-heading-anchor">
+    How to use?
+  </a>
+</h3>
+<p><figure class="md-image">
+  <a href="/image/Ocean/how.png" class="glightbox">
+    <img
+      src="/image/Ocean/how.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="user-journey-map">
+  <a href="#user-journey-map" class="md-heading-anchor">
+    User Journey Map
+  </a>
+</h3>
+<p>After using Ocean, emotional fluctuations have stabilized compared to before, enhanced mood and reduced feelings of depression.
+<figure class="md-image">
+  <a href="/image/Ocean/userJourney.png" class="glightbox">
+    <img
+      src="/image/Ocean/userJourney.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h3 id="final-product-prototype">
+  <a href="#final-product-prototype" class="md-heading-anchor">
+    Final Product Prototype
+  </a>
+</h3>
+<p>In the exhibition, we showcased the product prototype in the following parts:</p>
+<ol>
+<li>Ocean Device </br>
+Adjust the reading duration in the app by turning the knob.</li>
+<li>User&rsquo;s Phone </br>
+Place the phone on the device to activate the app.
+<figure class="md-image">
+  <a href="/image/Ocean/finalProduct.png" class="glightbox">
+    <img
+      src="/image/Ocean/finalProduct.png"
+      alt="Product"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</li>
+<li>Phone for Sending Messages from <strong>Important</strong> Contacts </br>
+Press the red button to send important messages to the phone.</li>
+<li>Phone for Sending Messages from <strong>Unimportant</strong> Contacts </br>
+Press the blue button to send unimportant messages to the phone.</li>
+</ol>
+<hr>
+<h2 id="contribution">
+  <a href="#contribution" class="md-heading-anchor">
+    Contribution
+  </a>
+</h2>
+<h3 id="individual-responsibilities">
+  <a href="#individual-responsibilities" class="md-heading-anchor">
+    Individual Responsibilities
+  </a>
+</h3>
+<ul>
+<li><strong>Device Electronics Design</strong>: Selected components, planned circuitry.</li>
+<li><strong>Programming</strong>:  Established data transfer from sensors to the mobile app, simulate message transmission between contacts.</li>
+</ul>
+<h3 id="collaborative-responsibilities">
+  <a href="#collaborative-responsibilities" class="md-heading-anchor">
+    Collaborative Responsibilities
+  </a>
+</h3>
+<ul>
+<li>Concept Development: Brainstorming on the topic and the solutions.</li>
+<li>Preliminary Research (Literature Reviews)</li>
+<li>User Research (Qualitative Interview)</li>
+</ul>
+<hr>
+<h2 id="team--acknowledgments">
+  <a href="#team--acknowledgments" class="md-heading-anchor">
+    Team &amp; Acknowledgments
+  </a>
+</h2>
+<p>This project received the <strong>Best Research Award</strong> in <strong>OpenHCI’23 workshop</strong> Final Competition, hosted at <strong>National Taiwan University</strong>.</p>
+<ul>
+<li><strong>Team Members</strong>: </br> <strong>Ming-Hua Hsieh</strong>, Yen-Yu Tung, Tsai-Ying Lin, Yi-Hua Lai, Tin-Chen Lu,  and Ching-Chu Liu.</li>
+<li><strong>Location</strong>: Taipei, Taiwan.</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+
+      
+        <aside class="article-toc">
+          <div class="toc-wrapper">
+            <div class="toc-header">
+              <h3 class="toc-title">
+                <i class="fas fa-list-ul"></i>
+                <span>Table of Contents</span>
+              </h3>
+              <button class="toc-toggle" aria-label="Toggle table of contents">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <nav class="toc-nav">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#product-overviews">Product Overviews</a></li>
+    <li><a href="#user-research">User Research</a>
+      <ul>
+        <li><a href="#survey-participation">Survey Participation</a></li>
+        <li><a href="#persona">Persona</a></li>
+        <li><a href="#journey-map">Journey Map</a></li>
+        <li><a href="#point-of-view">Point Of View</a></li>
+      </ul>
+    </li>
+    <li><a href="#concept-development">Concept Development</a></li>
+    <li><a href="#design-goal">Design Goal</a></li>
+    <li><a href="#sketch">Sketch</a>
+      <ul>
+        <li><a href="#message-in-a-bottle">Message in a bottle</a></li>
+      </ul>
+    </li>
+    <li><a href="#final-design">Final Design</a>
+      <ul>
+        <li><a href="#how-to-use">How to use?</a></li>
+        <li><a href="#user-journey-map">User Journey Map</a></li>
+        <li><a href="#final-product-prototype">Final Product Prototype</a></li>
+      </ul>
+    </li>
+    <li><a href="#contribution">Contribution</a>
+      <ul>
+        <li><a href="#individual-responsibilities">Individual Responsibilities</a></li>
+        <li><a href="#collaborative-responsibilities">Collaborative Responsibilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#team--acknowledgments">Team &amp; Acknowledgments</a></li>
+  </ul>
+</nav>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+        (function() {
+          'use strict';
+
+          const tocWrapper = document.querySelector('.toc-wrapper');
+          const tocToggle = document.querySelector('.toc-toggle');
+          const tocNav = document.querySelector('.toc-nav');
+          const tocLinks = document.querySelectorAll('.toc-nav a');
+
+          if (!tocWrapper || !tocNav) return;
+
+          
+          
+          
+          if (tocToggle) {
+            tocToggle.addEventListener('click', function() {
+              tocWrapper.classList.toggle('collapsed');
+            });
+          }
+
+          
+          
+          
+          tocLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                const yOffset = -80; 
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                  top: y,
+                  behavior: 'smooth'
+                });
+
+                
+                history.pushState(null, null, targetId);
+              }
+            });
+          });
+
+          
+          
+          
+          const headings = document.querySelectorAll('.markdown-body h1[id], .markdown-body h2[id], .markdown-body h3[id], .markdown-body h4[id], .markdown-body h5[id], .markdown-body h6[id]');
+
+          let activeHeading = null;
+          const observer = new IntersectionObserver(
+            (entries) => {
+              
+              const intersectingHeadings = [];
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  intersectingHeadings.push({
+                    element: entry.target,
+                    top: entry.boundingClientRect.top
+                  });
+                }
+              });
+
+              
+              if (intersectingHeadings.length > 0) {
+                
+                intersectingHeadings.sort((a, b) => Math.abs(a.top) - Math.abs(b.top));
+
+                const closestHeading = intersectingHeadings[0].element;
+                const id = closestHeading.getAttribute('id');
+
+                if (id && id !== activeHeading) {
+                  activeHeading = id;
+                  const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+                  if (tocLink) {
+                    
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    
+                    tocLink.classList.add('active');
+                  }
+                }
+              }
+            },
+            {
+              rootMargin: '-80px 0px -80%',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+            }
+          );
+
+          
+          headings.forEach((heading) => {
+            observer.observe(heading);
+          });
+
+          
+          if (tocLinks.length > 0) {
+            tocLinks[0].classList.add('active');
+            activeHeading = tocLinks[0].getAttribute('href').substring(1);
+          }
+        })();
+        </script>
+      
+    </div>
+  </section>
+
+      </main>
+
+      <footer class="pb-6 pt-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="footer-shell">
+      <div class="footer-inner">
+        
+        <div class="space-y-1">
+          <p class="footer-small">
+            &copy; 2026 Ming-Hua Hsieh — All rights
+            reserved.
+          </p>
+
+          <p class="footer-small flex flex-wrap items-center gap-1">
+            <span>Built with</span>
+
+            <a
+              href="https://gohugo.io/"
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Hugo</span>
+            </a>
+
+            <span>/</span>
+
+            <a
+              href=""
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Minimal&nbsp;Black</span>
+            </a>
+          </p>
+        </div>
+
+        
+        
+        <div class="footer-links">
+          
+          <a
+            href="https://github.com/mh1006"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github text-[0.8rem]"></i>
+            <span>GitHub</span>
+          </a>
+          
+          <a
+            href="https://www.linkedin.com/in/ming-hua-hsieh-56b91521a/"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in text-[0.8rem]"></i>
+            <span>LinkedIn</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="search-overlay" data-search-overlay>
+  <div class="search-overlay-backdrop" data-search-close></div>
+
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass text-[0.8rem] text-muted"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search posts..."
+          autocomplete="off"
+          data-search-input
+        />
+      </div>
+      <button
+        type="button"
+        class="search-close"
+        data-search-close
+        aria-label="Close search"
+      >
+        <i class="fa-solid fa-xmark text-[0.8rem]"></i>
+      </button>
+    </div>
+
+    <div class="search-panel-body">
+      <div class="search-results" data-search-results>
+        <div class="search-empty-state">
+          <div class="search-empty-icon">
+            <i class="fa-solid fa-magnifying-glass text-[1rem]"></i>
+          </div>
+          <p class="search-empty-title">Start searching</p>
+          <p class="search-empty-subtitle">
+            Enter keywords to search articles.
+          </p>
+        </div>
+      </div>
+
+      <div class="search-footer-hints">
+        <div class="search-hint-key">
+          <span>↑↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="search-hint-key">
+          <span>↵</span>
+          <span>Select</span>
+        </div>
+        <div class="search-hint-key">
+          <span>ESC</span>
+          <span>Close</span>
+        </div>
+        <div class="search-hint-key search-hint-right">
+          <span>Ctrl</span><span>K</span>
+          <span>Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dock" data-dock>
+  <div class="dock-inner">
+    
+    <div class="dock-panel" data-dock-panel>
+      
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="back"
+        aria-label="Go back"
+      >
+        <i class="fa-solid fa-arrow-left text-[0.7rem]"></i>
+      </button>
+      <span class="dock-divider" aria-hidden="true"></span>
+      
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="search"
+        aria-label="Search"
+        onclick="window.MinimalSearch && window.MinimalSearch.open()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-[0.7rem]"></i>
+      </button>
+
+      
+      <span class="dock-divider" aria-hidden="true"></span>
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="top"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-[0.7rem]"></i>
+      </button>
+    </div>
+
+    
+    <button
+      type="button"
+      class="dock-toggle"
+      aria-label="Open quick actions"
+      data-dock-toggle
+    >
+      <span class="dock-toggle-dots"></span>
+    </button>
+  </div>
+</div>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/js/justifiedGallery.min.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>

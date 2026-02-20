@@ -12,7 +12,11 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/projects/ocean/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/portfolio/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/product/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
