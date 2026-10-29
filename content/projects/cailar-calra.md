@@ -1,5 +1,5 @@
 +++
-title = "Cailar & Calra"
+title = "Cailar & Carla"
 startDate = "2020-09-01"
 endDate = "2021-12-07"
 icon = "fa-solid fa-palette"
