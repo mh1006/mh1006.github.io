@@ -1,11 +1,11 @@
 +++
 title = "Slime Strategy"
+icon = "fa-solid fa-chess-knight"
+description = "Seize Strategy Moments in Your Hectic Life!"
 startDate = "2022-11-01"
 endDate = "2023-01-01"
-description = "Seize Strategy Moments in Your Hectic Life!"
 github = "https://github.com/mh1006/Slime-Strategy"
 demo = "https://www.youtube.com/watch?si=kldGSsNg9DvH3vXI&v=2sHQX9ODHoI&feature=youtu.be"
-featured = true
 +++
 
 ## Product Overview

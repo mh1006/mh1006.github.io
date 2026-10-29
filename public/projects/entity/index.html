@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en"
+  data-cb-collapse-enabled=""
+  data-cb-collapse-default=""
+  data-cb-collapse-lines=""
+  data-cb-collapse-auto-height=""
+  data-cb-collapse-collapsed-height="">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>The Entity | Ming-Hua Hsieh</title>
+
+<meta name="description" content="An immersive installation that explores the unsettling feeling of being watched." />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/icons/photoIcon.png" />
+
+
+
+
+  <link rel="apple-touch-icon" href="#ZgotmplZ" />
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <link rel="manifest" href="http://localhost:1313/manifest.webmanifest" />
+    
+  
+
+
+<link rel="stylesheet" href="/css/main.css"> 
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css"
+  >
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/css/justifiedGallery.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ theme: "dark" });
+</script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var systemDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var defaultTheme =
+        'dark';
+
+      var theme =
+        stored ||
+        (defaultTheme === "dark"
+          ? "dark"
+          : defaultTheme === "light"
+          ? "light"
+          : systemDark
+          ? "dark"
+          : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+
+
+
+
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header class="pt-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    
+    <div class="nav-shell">
+      <div class="nav-inner">
+        
+        <a href="/" class="flex items-center gap-2">
+          
+            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-surface">
+              <img
+                src="/icons/photo.jpg"
+                alt="Ming-Hua Hsieh"
+                class="h-full w-full object-cover"
+              >
+            </div>
+          
+          <span class="text-xs font-semibold tracking-wide">
+            Ming-Hua Hsieh
+          </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          
+          <nav class="hidden items-center gap-5 md:flex">
+              <a
+                href="/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-solid fa-house text-[0.75rem]"></i>
+                
+                <span>Home</span>
+              </a>
+              <a
+                href="/about/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-user text-[0.75rem]"></i>
+                
+                <span>About</span>
+              </a>
+              <a
+                href="/projects/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-folder-open text-[0.75rem]"></i>
+                
+                <span>Projects</span>
+              </a>
+          </nav>
+
+          
+          <button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  data-theme-toggle
+>
+  <span data-theme-icon-light style="display: none">
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M8.05 15.95l-1.414 1.414m0-11.314L8.05 8.05m9.9 9.9-1.414-1.414"
+      />
+    </svg>
+  </span>
+
+  <span data-theme-icon-dark>
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z" />
+    </svg>
+  </span>
+</button>
+
+
+          
+          <button
+            type="button"
+            class="ml-1 inline-flex items-center justify-center rounded-full border border-border bg-bg p-2 text-muted shadow-sm hover:text-accent md:hidden"
+            aria-label="Toggle navigation"
+            data-mobile-nav-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto mt-2 max-w-7xl px-4 sm:px-6 md:hidden">
+    <nav
+      class="hidden rounded-2xl border border-border bg-surface px-4 py-3 text-sm text-muted shadow-md"
+      data-mobile-nav
+    >
+      
+        <a href="/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-solid fa-house text-[0.8rem]"></i>
+          
+          <span>Home</span>
+        </a>
+      
+        <a href="/about/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-user text-[0.8rem]"></i>
+          
+          <span>About</span>
+        </a>
+      
+        <a href="/projects/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-folder-open text-[0.8rem]"></i>
+          
+          <span>Projects</span>
+        </a>
+      
+    </nav>
+  </div>
+</header>
+
+
+      <main class="flex-1">
+        
+  <section class="layout-page section-stack">
+    <div class="article-layout">
+      <article class="article-main space-y-4">
+        <header class="space-y-2">
+          <h1 class="heading-page text-2xl sm:text-3xl">The Entity</h1>
+
+          <div class="text-[0.75rem] text-muted">
+            
+            
+              <span> • 5 min read</span>
+            
+
+          
+            
+            
+            
+              <span>
+                Apr 2026 – Jul 2026
+              </span>
+            
+
+          </div>
+
+          
+            <p class="max-w-xl text-sm text-muted">
+              An immersive installation that explores the unsettling feeling of being watched.
+            </p>
+          
+        </header>
+
+        <div class="card card-pad">
+          <div class="markdown-body">
+            <h2 id="project-overview">
+  <a href="#project-overview" class="md-heading-anchor">
+    Project Overview
+  </a>
+</h2>
+<p>The core goal of this project was to design an experience that makes users feel genuinely uncomfortable and weird. We shaped this atmosphere by centering the interaction around an idol that constantly &ldquo;watches&rdquo; the participant while they solving the puzzle.</p>
+<p>Instead of giving clear written instructions, we used light and sound cues to guide participants to complete the process step by step. The interaction builds up to a climax where they are forced to physically squeeze a tangible heart. By mixing the creepy feeling of being observed with the actual physical resistance of squeezing the heart, we wanted to turn a simple installation into an intense, ritualistic experience.</p>
+<div style="display: flex; justify-content: center; width: 100%;">
+  <div style="text-align: center; width: 100%;">
+    <a href="/image/Entity/entity.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/entity.jpg" alt="Entity Installation" style="width: 60%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Entity Altar Setup</p>
+  </div>
+</div>
+<h2 id="design-process">
+  <a href="#design-process" class="md-heading-anchor">
+    Design Process
+  </a>
+</h2>
+<p><figure class="md-image">
+  <a href="/image/Entity/moodBoard.jpg" class="glightbox">
+    <img
+      src="/image/Entity/moodBoard.jpg"
+      alt="Ideation"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h4 id="concept-the-anxiety-of-being-watched">
+  <a href="#concept-the-anxiety-of-being-watched" class="md-heading-anchor">
+    Concept: The Anxiety of Being Watched
+  </a>
+</h4>
+<p>Our ideation started with a simple question: <strong>How do we design discomfort?</strong></p>
+<p>To capture this feeling, our team brainstormed using different mood boards. Mine focused on unsettling textures, old-style computer aesthetics, and the concept of &ldquo;being watched.&rdquo; The team loved the creepy vibe of staring eyes, which became the core conceptual pillar for our idol.</p>
+<h4 id="from-concept-to-altar">
+  <a href="#from-concept-to-altar" class="md-heading-anchor">
+    From Concept to Altar
+  </a>
+</h4>
+<p>We translated the feeling of being watched into an interactive altar, with the digital idol at its centre. The surrounding objects and carefully arranged setup helped create a ritual-like atmosphere, making the experience feel unsettling as users approached the idol.
+<figure class="md-image">
+  <a href="/image/Entity/sketch.jpg" class="glightbox">
+    <img
+      src="/image/Entity/sketch.jpg"
+      alt="Ideation"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h4 id="designing-the-physical-setup">
+  <a href="#designing-the-physical-setup" class="md-heading-anchor">
+    Designing the Physical Setup
+  </a>
+</h4>
+<p>I helped bring the altar to life by building the physical setup around the interactive elements. I designed and assembled bases for the salvaged electronics, organised the internal wiring, and worked on the scenography to make the installation feel like a cohesive ritual space rather than a prototype. I also made sure the digital idol’s gaze aligned with the user’s eye level.</p>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%;">
+  <div style="text-align: center;">
+    <a href="/image/Entity/artifact.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/artifact.jpg" alt="Step 0" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 0: The Call</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/heart.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/heart.jpg" alt="Step 1" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 1: The Gaze</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/altar.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/altar.jpg" alt="Step 2" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 2: Approach</p>
+  </div>
+</div>
+<h2 id="key-design-iterations">
+  <a href="#key-design-iterations" class="md-heading-anchor">
+    Key Design Iterations
+  </a>
+</h2>
+<div style="display: flex; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Entity/prototype.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/prototype.jpg" alt="Prototype" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Prototype exhibition</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Entity/demo.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/demo.jpg" alt="Demo" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Demo exhibition</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Entity/final.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/final.jpg" alt="Final Setup" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Final exhibition</p>
+  </div>
+</div>
+<h4 id="the-light-guide-prototype--demo">
+  <a href="#the-light-guide-prototype--demo" class="md-heading-anchor">
+    The Light Guide (Prototype → Demo)
+  </a>
+</h4>
+<p>During our first prototype exhibition, users were confused about what to do next without clear instructions.</p>
+<p>Rather than adding text that could break the immersive experience, we programmed dynamic LED lighting and sound cues to guide users’ attention towards the relevant artifacts and lead them through the interaction step by step.</p>
+<h4 id="from-usb-cables-to-a-pumping-heart-prototype--demo">
+  <a href="#from-usb-cables-to-a-pumping-heart-prototype--demo" class="md-heading-anchor">
+    From USB Cables to a Pumping Heart (Prototype → Demo)
+  </a>
+</h4>
+<p>Our initial idea was to have users plug a USB stick into the idol to “insert data” and awaken it. However, during testing, this interaction felt confusing and awkward to perform.</p>
+<p>We replaced it with a squeezable, tangible heart. Squeezing the heart became a more intuitive way to bring the idol to life, while its texture and physical resistance made the interaction feel uncomfortable in a way that reinforced the dark narrative.</p>
+<h4 id="making-the-artifacts-discoverable-demo--final">
+  <a href="#making-the-artifacts-discoverable-demo--final" class="md-heading-anchor">
+    Making the Artifacts Discoverable (Demo → Final)
+  </a>
+</h4>
+<p>In the earlier setup, the artifacts were not clearly presented as objects users could pick up and interact with.</p>
+<p>We added two tables beside the altar to display the artifacts separately. This made them easier to spot and access, helping users understand that they were part of the ritual and needed to be placed on the altar.</p>
+<h2 id="interaction-flow">
+  <a href="#interaction-flow" class="md-heading-anchor">
+    Interaction Flow
+  </a>
+</h2>
+<p>Light and sound cues guide users through the ritual, leading them from the entrance to the final interaction without written instructions.</p>
+<div style="margin: 24px 0;">
+  <p style="font-size: 0.95em; color: #444; line-height: 1.6; margin: 0;">
+    <strong>Phase 1: Building Tension.</strong> Guided by light and sound cues, the user approaches the altar with a candle and activates the installation. As the digital idol begins tracking their movements, the feeling of being watched builds. The user must then find the correct artifact to proceed.
+  </p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%;">
+  <div style="text-align: center;">
+    <a href="/image/Entity/step0.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step0.jpg" alt="Step 0" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 0: The Call</p>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">The user picks up a candle at the entrance and follows the light and sound cues towards the altar.</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/step1.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step1.jpg" alt="Step 1" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 1: The Gaze</p>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Placing the candle activates the altar, and the digital idol begins tracking the user’s movements.</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/step2.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step2.jpg" alt="Step 2" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 2: The Search</p>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">The user searches for the correct artifact and places it on the altar to proceed.</p>
+  </div>
+</div>
+<div style="margin: 24px 0;">
+  <p style="font-size: 0.95em; color: #444; line-height: 1.6; margin: 0;">
+    <strong>Phase 2: The Sacrifice.</strong> Once the correct artifact is placed, a light illuminates the idol’s chest, guiding the user to reach inside and squeeze a tangible heart. The physical resistance reinforces the psychological discomfort of the ritual. As the heart is pressed, the installation responds, bringing the experience to its climax.
+  </p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%;">
+  <div style="text-align: center;">
+    <a href="/image/Entity/step3a.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step3a.jpg" alt="Step 3a" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 3a: The Invitation</p>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">A light illuminates the idol’s chest, signalling the next step.</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/step3b.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step3b.jpg" alt="Step 3b" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 3b: Physical Resistance</p>
+     <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">The user reaches into the altar and squeezes the tangible heart.</p>
+  </div>
+  <div style="text-align: center;">
+    <a href="/image/Entity/step4.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Entity/step4.jpg" alt="Step 4" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Step 4: The Climax</p>
+     <p style="font-size: 0.85em; color: #555; margin-top: 6px; margin-bottom: 0;">Text floods the screen, revealing the ritual’s conclusion.</p>
+  </div>
+</div>
+<hr>
+<h2 id="technical-specifications">
+  <a href="#technical-specifications" class="md-heading-anchor">
+    Technical Specifications
+  </a>
+</h2>
+<div style="text-align: center;">
+  <img src="/image/Entity/software.jpg"
+       alt="TouchDesigner and Pure Data"
+       style="width: 65%; height: auto; border-radius: 8px;">
+  <p style="font-size: 0.85em; color: #555; margin-top: 8px;">
+    Behind the scenes: TouchDesigner (left) and Pure Data (right).
+  </p>
+</div>
+<ul>
+<li><strong>Compute &amp; Control:</strong> Laptops ×2, ESP32 microcontrollers ×2</li>
+<li><strong>Software Stack:</strong> TouchDesigner, Pure Data, Python, Chataigne</li>
+<li><strong>Sensors &amp; Input:</strong> Kinect sensor, RFID scanners ×2 (with 5 cards), light-dependent resistor (LDR), force-sensitive resistor (FSR)</li>
+<li><strong>Output &amp; Feedback:</strong> 1080p screens, speakers, independent NeoPixel LED strips, haptic motor</li>
+<li><strong>Fabrication:</strong> Cardboard altar structure, 3D-printed idol body parts, and custom artifacts assembled from salvaged electronic components.</li>
+</ul>
+<hr>
+<h2 id="contributions">
+  <a href="#contributions" class="md-heading-anchor">
+    Contributions
+  </a>
+</h2>
+<ul>
+<li><strong>Concept &amp; Ideation:</strong> Developed the initial mood board around staring eyes, retro technology, and unsettling textures, shaping the project’s digital idol concept.</li>
+<li><strong>Physical Prototyping:</strong> Sourced salvaged electronic components and built the interactive artifacts, custom bases, and main table structure.</li>
+<li><strong>Assembly &amp; Exhibition Setup (Collaborative):</strong> Assembled the altar, managed cable routing, and sourced props to create an immersive environment for the final exhibition.</li>
+</ul>
+<hr>
+<h2 id="team--acknowledgments">
+  <a href="#team--acknowledgments" class="md-heading-anchor">
+    Team &amp; Acknowledgments
+  </a>
+</h2>
+<p>FFollowing the course&rsquo;s final exhibition, the installation was presented at <a
+  href="https://www.sickhouse.nl/"
+  target="_blank" rel="noopener"
+  class="md-link"
+>
+  SICKHOUSE (Enschede)
+</a>
+ and <a
+  href="https://www.gogbot.nl/program/ut-ovidiu-lascu"
+  target="_blank" rel="noopener"
+  class="md-link"
+>
+  GOGBOT 2026
+</a>
+. It was later further developed by Diana Bîrjoveanu, Ovidiu Lascu, and Vlad Alexe and exhibited at <a
+  href="https://ddw.nl/en/programme/archive/2026/the-entity"
+  target="_blank" rel="noopener"
+  class="md-link"
+>
+  Dutch Design Week
+</a>
+.</p>
+<ul>
+<li><strong>Team Members</strong>: <strong>Ming-Hua Hsieh</strong>, Arturs Višņausks, Diana Bîrjoveanu, Julia Kersten, Ovidiu Lascu, Vlad Alexe</li>
+<li><strong>Supervisor</strong>: Robby van Delden</li>
+<li><strong>Institution</strong>: University of Twente (UT), Enschede, the Netherlands</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+
+      
+        <aside class="article-toc">
+          <div class="toc-wrapper">
+            <div class="toc-header">
+              <h3 class="toc-title">
+                <i class="fas fa-list-ul"></i>
+                <span>Table of Contents</span>
+              </h3>
+              <button class="toc-toggle" aria-label="Toggle table of contents">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <nav class="toc-nav">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-overview">Project Overview</a></li>
+    <li><a href="#design-process">Design Process</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#concept-the-anxiety-of-being-watched">Concept: The Anxiety of Being Watched</a></li>
+            <li><a href="#from-concept-to-altar">From Concept to Altar</a></li>
+            <li><a href="#designing-the-physical-setup">Designing the Physical Setup</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#key-design-iterations">Key Design Iterations</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#the-light-guide-prototype--demo">The Light Guide (Prototype → Demo)</a></li>
+            <li><a href="#from-usb-cables-to-a-pumping-heart-prototype--demo">From USB Cables to a Pumping Heart (Prototype → Demo)</a></li>
+            <li><a href="#making-the-artifacts-discoverable-demo--final">Making the Artifacts Discoverable (Demo → Final)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#interaction-flow">Interaction Flow</a></li>
+    <li><a href="#technical-specifications">Technical Specifications</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#team--acknowledgments">Team &amp; Acknowledgments</a></li>
+  </ul>
+</nav>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+        (function() {
+          'use strict';
+
+          const tocWrapper = document.querySelector('.toc-wrapper');
+          const tocToggle = document.querySelector('.toc-toggle');
+          const tocNav = document.querySelector('.toc-nav');
+          const tocLinks = document.querySelectorAll('.toc-nav a');
+
+          if (!tocWrapper || !tocNav) return;
+
+          
+          
+          
+          if (tocToggle) {
+            tocToggle.addEventListener('click', function() {
+              tocWrapper.classList.toggle('collapsed');
+            });
+          }
+
+          
+          
+          
+          tocLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                const yOffset = -80; 
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                  top: y,
+                  behavior: 'smooth'
+                });
+
+                
+                history.pushState(null, null, targetId);
+              }
+            });
+          });
+
+          
+          
+          
+          const headings = document.querySelectorAll('.markdown-body h1[id], .markdown-body h2[id], .markdown-body h3[id], .markdown-body h4[id], .markdown-body h5[id], .markdown-body h6[id]');
+
+          let activeHeading = null;
+          const observer = new IntersectionObserver(
+            (entries) => {
+              
+              const intersectingHeadings = [];
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  intersectingHeadings.push({
+                    element: entry.target,
+                    top: entry.boundingClientRect.top
+                  });
+                }
+              });
+
+              
+              if (intersectingHeadings.length > 0) {
+                
+                intersectingHeadings.sort((a, b) => Math.abs(a.top) - Math.abs(b.top));
+
+                const closestHeading = intersectingHeadings[0].element;
+                const id = closestHeading.getAttribute('id');
+
+                if (id && id !== activeHeading) {
+                  activeHeading = id;
+                  const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+                  if (tocLink) {
+                    
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    
+                    tocLink.classList.add('active');
+                  }
+                }
+              }
+            },
+            {
+              rootMargin: '-80px 0px -80%',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+            }
+          );
+
+          
+          headings.forEach((heading) => {
+            observer.observe(heading);
+          });
+
+          
+          if (tocLinks.length > 0) {
+            tocLinks[0].classList.add('active');
+            activeHeading = tocLinks[0].getAttribute('href').substring(1);
+          }
+        })();
+        </script>
+      
+    </div>
+  </section>
+
+      </main>
+
+      <footer class="pb-6 pt-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="footer-shell">
+      <div class="footer-inner">
+        
+        <div class="space-y-1">
+          <p class="footer-small">
+            &copy; 2026 Ming-Hua Hsieh — All rights
+            reserved.
+          </p>
+
+          <p class="footer-small flex flex-wrap items-center gap-1">
+            <span>Built with</span>
+
+            <a
+              href="https://gohugo.io/"
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Hugo</span>
+            </a>
+
+            <span>/</span>
+
+            <a
+              href=""
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Minimal&nbsp;Black</span>
+            </a>
+          </p>
+        </div>
+
+        
+        
+        <div class="footer-links">
+          
+          <a
+            href="https://github.com/mh1006"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github text-[0.8rem]"></i>
+            <span>GitHub</span>
+          </a>
+          
+          <a
+            href="https://www.linkedin.com/in/ming-hua-hsieh-56b91521a/"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in text-[0.8rem]"></i>
+            <span>LinkedIn</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="search-overlay" data-search-overlay>
+  <div class="search-overlay-backdrop" data-search-close></div>
+
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass text-[0.8rem] text-muted"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search posts..."
+          autocomplete="off"
+          data-search-input
+        />
+      </div>
+      <button
+        type="button"
+        class="search-close"
+        data-search-close
+        aria-label="Close search"
+      >
+        <i class="fa-solid fa-xmark text-[0.8rem]"></i>
+      </button>
+    </div>
+
+    <div class="search-panel-body">
+      <div class="search-results" data-search-results>
+        <div class="search-empty-state">
+          <div class="search-empty-icon">
+            <i class="fa-solid fa-magnifying-glass text-[1rem]"></i>
+          </div>
+          <p class="search-empty-title">Start searching</p>
+          <p class="search-empty-subtitle">
+            Enter keywords to search articles.
+          </p>
+        </div>
+      </div>
+
+      <div class="search-footer-hints">
+        <div class="search-hint-key">
+          <span>↑↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="search-hint-key">
+          <span>↵</span>
+          <span>Select</span>
+        </div>
+        <div class="search-hint-key">
+          <span>ESC</span>
+          <span>Close</span>
+        </div>
+        <div class="search-hint-key search-hint-right">
+          <span>Ctrl</span><span>K</span>
+          <span>Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dock" data-dock>
+  <div class="dock-inner">
+    
+    <div class="dock-panel" data-dock-panel>
+      
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="back"
+        aria-label="Go back"
+      >
+        <i class="fa-solid fa-arrow-left text-[0.7rem]"></i>
+      </button>
+      <span class="dock-divider" aria-hidden="true"></span>
+      
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="search"
+        aria-label="Search"
+        onclick="window.MinimalSearch && window.MinimalSearch.open()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-[0.7rem]"></i>
+      </button>
+
+      
+      <span class="dock-divider" aria-hidden="true"></span>
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="top"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-[0.7rem]"></i>
+      </button>
+    </div>
+
+    
+    <button
+      type="button"
+      class="dock-toggle"
+      aria-label="Open quick actions"
+      data-dock-toggle
+    >
+      <span class="dock-toggle-dots"></span>
+    </button>
+  </div>
+</div>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/js/justifiedGallery.min.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>

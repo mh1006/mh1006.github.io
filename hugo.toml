@@ -27,8 +27,8 @@ theme = "minimal-black"
   logo = "icons/photo.jpg"
 
   # Project and blog intro text
-  projectsIntro = "Selected projects to display list." # Can be empty
-  blogIntro = "" # Can be empty
+  projectsIntro = ""
+  blogIntro = ""
 
   # Web App Manifest Configuration (PWA support)
   [params.manifest]

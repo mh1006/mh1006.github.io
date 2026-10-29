@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en"
+  data-cb-collapse-enabled=""
+  data-cb-collapse-default=""
+  data-cb-collapse-lines=""
+  data-cb-collapse-auto-height=""
+  data-cb-collapse-collapsed-height="">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Chami | Ming-Hua Hsieh</title>
+
+<meta name="description" content="An interactive chameleon robot that helps children feel more at ease in hospital waiting rooms." />
+
+
+
+
+  <link rel="icon" type="image/x-icon" href="/icons/photoIcon.png" />
+
+
+
+
+  <link rel="apple-touch-icon" href="#ZgotmplZ" />
+
+
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+      <link rel="manifest" href="http://localhost:1313/manifest.webmanifest" />
+    
+  
+
+
+<link rel="stylesheet" href="/css/main.css"> 
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/devicon.min.css"
+  >
+
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/css/justifiedGallery.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ theme: "dark" });
+</script>
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("theme");
+      var systemDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var defaultTheme =
+        'dark';
+
+      var theme =
+        stored ||
+        (defaultTheme === "dark"
+          ? "dark"
+          : defaultTheme === "light"
+          ? "light"
+          : systemDark
+          ? "dark"
+          : "light");
+
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+
+
+
+
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <div class="flex min-h-screen flex-col">
+      <header class="pt-6">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    
+    <div class="nav-shell">
+      <div class="nav-inner">
+        
+        <a href="/" class="flex items-center gap-2">
+          
+            <div class="flex h-8 w-8 items-center justify-center overflow-hidden rounded-full bg-surface">
+              <img
+                src="/icons/photo.jpg"
+                alt="Ming-Hua Hsieh"
+                class="h-full w-full object-cover"
+              >
+            </div>
+          
+          <span class="text-xs font-semibold tracking-wide">
+            Ming-Hua Hsieh
+          </span>
+        </a>
+
+        <div class="flex items-center gap-2">
+          
+          <nav class="hidden items-center gap-5 md:flex">
+              <a
+                href="/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-solid fa-house text-[0.75rem]"></i>
+                
+                <span>Home</span>
+              </a>
+              <a
+                href="/about/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-user text-[0.75rem]"></i>
+                
+                <span>About</span>
+              </a>
+              <a
+                href="/projects/"
+                class="nav-link link-underline flex items-center gap-1 "
+              >
+                
+                  <i class="fa-regular fa-folder-open text-[0.75rem]"></i>
+                
+                <span>Projects</span>
+              </a>
+          </nav>
+
+          
+          <button
+  type="button"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  data-theme-toggle
+>
+  <span data-theme-icon-light style="display: none">
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="12" cy="12" r="4" />
+      <path
+        d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364-1.414 1.414M8.05 15.95l-1.414 1.414m0-11.314L8.05 8.05m9.9 9.9-1.414-1.414"
+      />
+    </svg>
+  </span>
+
+  <span data-theme-icon-dark>
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-4 w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M21 12.79A9 9 0 0 1 12.21 3 7 7 0 1 0 21 12.79z" />
+    </svg>
+  </span>
+</button>
+
+
+          
+          <button
+            type="button"
+            class="ml-1 inline-flex items-center justify-center rounded-full border border-border bg-bg p-2 text-muted shadow-sm hover:text-accent md:hidden"
+            aria-label="Toggle navigation"
+            data-mobile-nav-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mx-auto mt-2 max-w-7xl px-4 sm:px-6 md:hidden">
+    <nav
+      class="hidden rounded-2xl border border-border bg-surface px-4 py-3 text-sm text-muted shadow-md"
+      data-mobile-nav
+    >
+      
+        <a href="/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-solid fa-house text-[0.8rem]"></i>
+          
+          <span>Home</span>
+        </a>
+      
+        <a href="/about/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-user text-[0.8rem]"></i>
+          
+          <span>About</span>
+        </a>
+      
+        <a href="/projects/" class="flex items-center gap-2 py-1.5">
+          
+            <i class="fa-regular fa-folder-open text-[0.8rem]"></i>
+          
+          <span>Projects</span>
+        </a>
+      
+    </nav>
+  </div>
+</header>
+
+
+      <main class="flex-1">
+        
+  <section class="layout-page section-stack">
+    <div class="article-layout">
+      <article class="article-main space-y-4">
+        <header class="space-y-2">
+          <h1 class="heading-page text-2xl sm:text-3xl">Chami</h1>
+
+          <div class="text-[0.75rem] text-muted">
+            
+            
+              <span> • 5 min read</span>
+            
+
+          
+            
+            
+            
+              <span>
+                Apr 2026 – Jul 2026
+              </span>
+            
+
+          </div>
+
+          
+            <p class="max-w-xl text-sm text-muted">
+              An interactive chameleon robot that helps children feel more at ease in hospital waiting rooms.
+            </p>
+          
+        </header>
+
+        <div class="card card-pad">
+          <div class="markdown-body">
+            <h2 id="product-overview">
+  <a href="#product-overview" class="md-heading-anchor">
+    Product Overview
+  </a>
+</h2>
+<p><strong>Chami</strong> is an interactive chameleon robot designed specifically for pediatric waiting rooms. It features a fun color-matching game and provides responsive and engaging interaction to help young patients adjust to the often-frightening hospital environment.</p>
+<p>Key features of Chami include:</p>
+<ul>
+<li><strong>Tactile Comfort:</strong> The prototype is crafted with a soft green fabric exterior, making it comforting and inviting for children to touch.</li>
+<li><strong>Emotional Support:</strong> Chami uses non-verbal communication to interact with children. It changes its LED eye patterns and makes simple sounds depending on what the child says or does.</li>
+<li><strong>Playful Interaction:</strong> Children play the game by pressing the physical buttons on Chami&rsquo;s body to match the colors displayed on its eyes.</li>
+</ul>
+<p><figure class="md-image">
+  <a href="/image/Chami/Chami.jpg" class="glightbox">
+    <img
+      src="/image/Chami/Chami.jpg"
+      alt="Chami"
+      loading="lazy"
+    />
+  </a>
+  
+</figure>
+</p>
+<h2 id="motivation">
+  <a href="#motivation" class="md-heading-anchor">
+    Motivation
+  </a>
+</h2>
+<p>Hospital waiting rooms can be highly stressful environments, often characterized by long wait times, unfamiliar routines, and fear of upcoming medical procedures. This experience is especially overwhelming for young children. Although hospitals frequently provide conventional distractions such as books, coloring activities, or television screens, these options offer only passive engagement and may not be effective
+in keeping a child’s attention away from their medical surroundings.
+<strong>Chami</strong> was created to alleviate this stress. It acts as a friendly companion, providing a reassuring interactive experience, effectively diverting children&rsquo;s attention, relieving their anxiety, and allowing them to engage in play.</p>
+<h2 id="behaviour-design-why-non-verbal">
+  <a href="#behaviour-design-why-non-verbal" class="md-heading-anchor">
+    Behaviour Design: Why Non-Verbal?
+  </a>
+</h2>
+<h3 id="the-problem">
+  <a href="#the-problem" class="md-heading-anchor">
+    The Problem
+  </a>
+</h3>
+<p>Humanoid robots often set unrealistic expectations. In noisy hospital environments, speech recognition frequently fails, leaving children confused and frustrated when the robot cannot understand simple instructions.</p>
+<h3 id="the-solution">
+  <a href="#the-solution" class="md-heading-anchor">
+    The Solution
+  </a>
+</h3>
+<p>Chami relies entirely on non-verbal communication. By adopting a zoomorphic chameleon design, its behavior strictly aligns with its animal form to eliminate the need for complex spoken language.</p>
+<p>Instead of speaking, Chami communicates through intuitive, audio-visual, and physical feedback:</p>
+<ul>
+<li>
+<p>Physical Movements: Expressive head gestures, such as nodding and shaking.</p>
+</li>
+<li>
+<p>Audio-Visual Cues: Simple animal sounds paired with distinct patterns and colors displayed on its LED eyes.</p>
+</li>
+</ul>
+<p>This non-verbal approach and the chameleon form serve as a natural metaphor for the color-matching game. It keeps the interaction highly expressive and approachable, while effectively reducing the children’s cognitive load.</p>
+<h2 id="system--hardware-design">
+  <a href="#system--hardware-design" class="md-heading-anchor">
+    System &amp; Hardware Design
+  </a>
+</h2>
+<p>To bring Chami to life, we integrated robust hardware within a soft, comforting fabric shell. The system relies on physical input/output channels to drive a multimodal interaction:</p>
+<ul>
+<li>Smart Perception (HuskyLens): Hidden in the mouth, the camera actively tracks children&rsquo;s faces. When a child approaches, Chami uses its rainbow eyes and head movements to gain attention.</li>
+<li>Tactile Gameplay Buttons: Placed along the chameleon&rsquo;s back for the color-matching game. Due to prototyping constraints and a shortage of LED matrix, we engineered a hybrid button system using a mix of LED and LCD screens. Although it is functional, this hardware inconsistency made us realize that user experience should be a priority in the next redesign.</li>
+<li>Natural Voice Control (Dialogflow): Instead of memorizing commands, children can talk freely. Dialogflow processes natural speech, transitioning the robot smoothly from casual greetings to gameplay.</li>
+</ul>
+<div style="display: flex; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/frontView.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/frontView.jpg" alt="Vest Prototype" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Front View</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/sideView.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/sideView.jpg" alt="Circuit schematic" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Side View</p>
+  </div>
+</div>
+<h3 id="dual-purpose-ui-the-led-eyes">
+  <a href="#dual-purpose-ui-the-led-eyes" class="md-heading-anchor">
+    Dual-Purpose UI: The LED Eyes
+  </a>
+</h3>
+<p>The eyes are Chami&rsquo;s primary communication tool, smoothly shifting between two modalities:</p>
+<ul>
+<li>Social Modality (Idle &amp; Attracting): When resting, Chami displays a soft white blinking pattern to show it is &ldquo;alive.&rdquo; Once the camera detects a face, the eyes instantly shift to a dynamic rainbow pattern to actively invite interaction.</li>
+<li>Task Modality (Gameplay): Provides clear game feedback. A correct match triggers green &ldquo;happy&rdquo; eyes with a rising tone, while a timeout triggers blue &ldquo;sad&rdquo; eyes with a dropping tone.</li>
+</ul>
+<div style="display: flex; gap: 15px; align-items: stretch; justify-content: center; width: 100%;">
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/eyesGreen.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/eyesGreen.jpg" alt="Happy Green Eyes" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Happy (Green)</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/eyesBlue.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/eyesBlue.jpg" alt="Sad Blue Eyes" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Sad (Blue)</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/eyesRainbow.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/eyesRainbow.jpg" alt="Attracting Rainbow Eyes" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Attracting (Rainbow)</p>
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+    <a href="/image/Chami/eyesIdle.jpg" target="_blank" style="text-decoration: none; border: none; box-shadow: none; outline: none; display: block;">
+      <img src="/image/Chami/eyesIdle.jpg" alt="Idle Eyes" style="width: 100%; height: auto; border-radius: 8px; cursor: pointer;">
+    </a>
+    <p style="font-size: 0.9em; color: #555; margin-top: 8px; margin-bottom: 0;">Idle</p>
+  </div>
+</div>
+<h2 id="user-feedback">
+  <a href="#user-feedback" class="md-heading-anchor">
+    User Feedback
+  </a>
+</h2>
+<p>While we couldn&rsquo;t bring Chami to a real pediatric ward during this short course project, our final exhibition served as a valuable testing ground. Users who interacted with Chami provided consistent and insightful feedback, giving us crucial qualitative observations on how people naturally engage with the robot.</p>
+<ul>
+<li><strong>High User Acceptance:</strong> The soft, green textile exterior and non-anthropomorphic chameleon design successfully managed user expectations. Users naturally interacted with Chami using gentle, baby-oriented language, proving the approachable design really worked.</li>
+<li><strong>Lifelike Presence:</strong> The combination of face-tracking and idle head movements, Chami felt genuinely alive rather than just programmed. This simple illusion of awareness naturally grabbed people&rsquo;s attention and drew them in.</li>
+<li><strong>Clear Emotional Affordances:</strong> By pairing expressive LED eye animations with non-verbal sounds, the multi-modal feedback made Chami’s internal states instantly recognizable. Users noted that the &ldquo;happy&rdquo; green or &ldquo;sad&rdquo; blue eyes provided clear feedback, and many were motivated to win the color game simply to &ldquo;make the chameleon happy&rdquo;.</li>
+</ul>
+<h3 id="key-learnings--future-iterations">
+  <a href="#key-learnings--future-iterations" class="md-heading-anchor">
+    Key Learnings &amp; Future Iterations
+  </a>
+</h3>
+<p>While the core interaction was successful, the exhibition highlighted two valuable areas for future improvement:</p>
+<ul>
+<li><strong>Visual Consistency:</strong> Due to hardware constraints, the prototype used mismatched button components (LCD and LED matrices), which caused slight confusion. Future iterations will use visually consistent buttons to clearly indicate their shared function.</li>
+<li><strong>Guiding User Attention:</strong> Because the lifelike head movements were so engaging, users naturally focused entirely on Chami&rsquo;s face and occasionally missed the start of the game on its body. To solve this, the next iteration will program Chami to look at its buttons and flash them in sequence to guide the user&rsquo;s attention before the game begins.</li>
+</ul>
+<p>Despite these minor prototype constraints, Chami proved that a thoughtfully designed, non-verbal companion can effectively reduce anxiety and offer comforting companionship to children in hospitals.</p>
+<hr>
+<h2 id="tech-stack">
+  <a href="#tech-stack" class="md-heading-anchor">
+    Tech Stack
+  </a>
+</h2>
+<h3 id="hardware">
+  <a href="#hardware" class="md-heading-anchor">
+    <strong>Hardware</strong>
+  </a>
+</h3>
+<ul>
+<li><strong>Controller</strong>: Arduino UNO.</li>
+<li><strong>Sensor</strong>: HuskyLens.</li>
+<li><strong>Component</strong>: LCD, LED Matrix, buttons, Servo Motors, MP3 Module &amp; Speaker.</li>
+</ul>
+<h3 id="software">
+  <a href="#software" class="md-heading-anchor">
+    <strong>Software</strong>
+  </a>
+</h3>
+<ul>
+<li><strong>Dialogue Management:</strong> DialogFlow</li>
+<li><strong>Audio &amp; Communication:</strong> Semantic Free Utterance sound design, PC-Arduino Serial Communication.</li>
+</ul>
+<hr>
+<h2 id="my-contributions">
+  <a href="#my-contributions" class="md-heading-anchor">
+    My Contributions
+  </a>
+</h2>
+<ul>
+<li><strong>External Design:</strong> Used soft textiles to create the chameleon exterior.</li>
+<li><strong>Physical Interface Design:</strong> Designed the tangible interaction buttons on the robot&rsquo;s body.</li>
+<li><strong>Game Logic / Coding:</strong> Linked the physical button inputs with the color-matching game.</li>
+</ul>
+<hr>
+<h2 id="team--acknowledgments">
+  <a href="#team--acknowledgments" class="md-heading-anchor">
+    Team &amp; Acknowledgments
+  </a>
+</h2>
+<ul>
+<li><strong>Team Members</strong>: <strong>Ming-Hua Hsieh</strong>, Amina Chairulina, Jada van der Heijden, Luit Meinen</li>
+<li><strong>Supervisor</strong>: Sebastian Schneider</li>
+<li><strong>Institution</strong>: University of Twente (UT), Enschede, the Netherlands</li>
+</ul>
+
+          </div>
+        </div>
+      </article>
+
+      
+        <aside class="article-toc">
+          <div class="toc-wrapper">
+            <div class="toc-header">
+              <h3 class="toc-title">
+                <i class="fas fa-list-ul"></i>
+                <span>Table of Contents</span>
+              </h3>
+              <button class="toc-toggle" aria-label="Toggle table of contents">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+            <nav class="toc-nav">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#product-overview">Product Overview</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#behaviour-design-why-non-verbal">Behaviour Design: Why Non-Verbal?</a>
+      <ul>
+        <li><a href="#the-problem">The Problem</a></li>
+        <li><a href="#the-solution">The Solution</a></li>
+      </ul>
+    </li>
+    <li><a href="#system--hardware-design">System &amp; Hardware Design</a>
+      <ul>
+        <li><a href="#dual-purpose-ui-the-led-eyes">Dual-Purpose UI: The LED Eyes</a></li>
+      </ul>
+    </li>
+    <li><a href="#user-feedback">User Feedback</a>
+      <ul>
+        <li><a href="#key-learnings--future-iterations">Key Learnings &amp; Future Iterations</a></li>
+      </ul>
+    </li>
+    <li><a href="#tech-stack">Tech Stack</a>
+      <ul>
+        <li><a href="#hardware"><strong>Hardware</strong></a></li>
+        <li><a href="#software"><strong>Software</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#my-contributions">My Contributions</a></li>
+    <li><a href="#team--acknowledgments">Team &amp; Acknowledgments</a></li>
+  </ul>
+</nav>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+        (function() {
+          'use strict';
+
+          const tocWrapper = document.querySelector('.toc-wrapper');
+          const tocToggle = document.querySelector('.toc-toggle');
+          const tocNav = document.querySelector('.toc-nav');
+          const tocLinks = document.querySelectorAll('.toc-nav a');
+
+          if (!tocWrapper || !tocNav) return;
+
+          
+          
+          
+          if (tocToggle) {
+            tocToggle.addEventListener('click', function() {
+              tocWrapper.classList.toggle('collapsed');
+            });
+          }
+
+          
+          
+          
+          tocLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href');
+              const targetElement = document.querySelector(targetId);
+
+              if (targetElement) {
+                const yOffset = -80; 
+                const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({
+                  top: y,
+                  behavior: 'smooth'
+                });
+
+                
+                history.pushState(null, null, targetId);
+              }
+            });
+          });
+
+          
+          
+          
+          const headings = document.querySelectorAll('.markdown-body h1[id], .markdown-body h2[id], .markdown-body h3[id], .markdown-body h4[id], .markdown-body h5[id], .markdown-body h6[id]');
+
+          let activeHeading = null;
+          const observer = new IntersectionObserver(
+            (entries) => {
+              
+              const intersectingHeadings = [];
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  intersectingHeadings.push({
+                    element: entry.target,
+                    top: entry.boundingClientRect.top
+                  });
+                }
+              });
+
+              
+              if (intersectingHeadings.length > 0) {
+                
+                intersectingHeadings.sort((a, b) => Math.abs(a.top) - Math.abs(b.top));
+
+                const closestHeading = intersectingHeadings[0].element;
+                const id = closestHeading.getAttribute('id');
+
+                if (id && id !== activeHeading) {
+                  activeHeading = id;
+                  const tocLink = document.querySelector(`.toc-nav a[href="#${id}"]`);
+
+                  if (tocLink) {
+                    
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    
+                    tocLink.classList.add('active');
+                  }
+                }
+              }
+            },
+            {
+              rootMargin: '-80px 0px -80%',
+              threshold: [0, 0.25, 0.5, 0.75, 1]
+            }
+          );
+
+          
+          headings.forEach((heading) => {
+            observer.observe(heading);
+          });
+
+          
+          if (tocLinks.length > 0) {
+            tocLinks[0].classList.add('active');
+            activeHeading = tocLinks[0].getAttribute('href').substring(1);
+          }
+        })();
+        </script>
+      
+    </div>
+  </section>
+
+      </main>
+
+      <footer class="pb-6 pt-10">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6">
+    <div class="footer-shell">
+      <div class="footer-inner">
+        
+        <div class="space-y-1">
+          <p class="footer-small">
+            &copy; 2026 Ming-Hua Hsieh — All rights
+            reserved.
+          </p>
+
+          <p class="footer-small flex flex-wrap items-center gap-1">
+            <span>Built with</span>
+
+            <a
+              href="https://gohugo.io/"
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Hugo</span>
+            </a>
+
+            <span>/</span>
+
+            <a
+              href=""
+              class="footer-link footer-float link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Minimal&nbsp;Black</span>
+            </a>
+          </p>
+        </div>
+
+        
+        
+        <div class="footer-links">
+          
+          <a
+            href="https://github.com/mh1006"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github text-[0.8rem]"></i>
+            <span>GitHub</span>
+          </a>
+          
+          <a
+            href="https://www.linkedin.com/in/ming-hua-hsieh-56b91521a/"
+            class="footer-link footer-float link-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in text-[0.8rem]"></i>
+            <span>LinkedIn</span>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="search-overlay" data-search-overlay>
+  <div class="search-overlay-backdrop" data-search-close></div>
+
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass text-[0.8rem] text-muted"></i>
+        <input
+          type="search"
+          class="search-input"
+          placeholder="Search posts..."
+          autocomplete="off"
+          data-search-input
+        />
+      </div>
+      <button
+        type="button"
+        class="search-close"
+        data-search-close
+        aria-label="Close search"
+      >
+        <i class="fa-solid fa-xmark text-[0.8rem]"></i>
+      </button>
+    </div>
+
+    <div class="search-panel-body">
+      <div class="search-results" data-search-results>
+        <div class="search-empty-state">
+          <div class="search-empty-icon">
+            <i class="fa-solid fa-magnifying-glass text-[1rem]"></i>
+          </div>
+          <p class="search-empty-title">Start searching</p>
+          <p class="search-empty-subtitle">
+            Enter keywords to search articles.
+          </p>
+        </div>
+      </div>
+
+      <div class="search-footer-hints">
+        <div class="search-hint-key">
+          <span>↑↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="search-hint-key">
+          <span>↵</span>
+          <span>Select</span>
+        </div>
+        <div class="search-hint-key">
+          <span>ESC</span>
+          <span>Close</span>
+        </div>
+        <div class="search-hint-key search-hint-right">
+          <span>Ctrl</span><span>K</span>
+          <span>Shortcut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="dock" data-dock>
+  <div class="dock-inner">
+    
+    <div class="dock-panel" data-dock-panel>
+      
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="back"
+        aria-label="Go back"
+      >
+        <i class="fa-solid fa-arrow-left text-[0.7rem]"></i>
+      </button>
+      <span class="dock-divider" aria-hidden="true"></span>
+      
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="search"
+        aria-label="Search"
+        onclick="window.MinimalSearch && window.MinimalSearch.open()"
+      >
+        <i class="fa-solid fa-magnifying-glass text-[0.7rem]"></i>
+      </button>
+
+      
+      <span class="dock-divider" aria-hidden="true"></span>
+
+      
+      <button
+        type="button"
+        class="dock-action"
+        data-dock-action="top"
+        aria-label="Back to top"
+      >
+        <i class="fa-solid fa-arrow-up text-[0.7rem]"></i>
+      </button>
+    </div>
+
+    
+    <button
+      type="button"
+      class="dock-toggle"
+      aria-label="Open quick actions"
+      data-dock-toggle
+    >
+      <span class="dock-toggle-dots"></span>
+    </button>
+  </div>
+</div>
+
+    <script src="/js/main.js" defer></script>
+    <script src="/js/search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justified-gallery@3.8.2/dist/js/justifiedGallery.min.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>

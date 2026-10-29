@@ -1,12 +1,12 @@
 +++
 title = "Ocean"
+icon = "fa-solid fa-water"
+description = "Experience Focused Learning Like Never Before!"
 startDate = "2023-07-01"
 endDate = "2023-08-01"
-description = "Experience Focused Learning Like Never Before!"
 github = "https://github.com/mh1006/Ocean"
 tags = ["product", "portfolio"]
 demo = "https://www.youtube.com/watch?v=FNhloKeGAKA"
-featured = true
 +++
 
 ## Product Overviews

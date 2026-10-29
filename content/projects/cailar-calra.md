@@ -2,6 +2,7 @@
 title = "Cailar & Calra"
 startDate = "2020-09-01"
 endDate = "2021-12-07"
+icon = "fa-solid fa-palette"
 description = "Make every corner a space for exploring colors!"
 github = "https://github.com/mh1006/Cailar-and-Carla"
 tags = ["design", "portfolio"]
@@ -227,13 +228,13 @@ Improve button design to make the indicator mark more visible and the button eas
 
 ## Tech Stack
 
-### **Hardware / Firmware**
-* **Controller**: ESP32 (NodeMCU32S).
-* **Sensor**: TCS34725 Color Sensor.
-* **Environment**: Arduino IDE (C/C++).
-* **Protocol**: Bluetooth Low Energy (BLE).
+### **Hardware & Firmware**
+* **Microcontroller**: ESP32 (NodeMCU32S).
+* **Color Sensor**: TCS34725.
+* **Programming Environment**: Arduino IDE (C/C++).
+* **Programming Protocol**: Bluetooth Low Energy (BLE).
 
-### **Software / Mobile**
+### **Software & Design**
 * **Framework**: Flutter (Dart).
 * **UI/UX Design**: Adobe Illustrator.
 
@@ -241,9 +242,9 @@ Improve button design to make the indicator mark more visible and the button eas
 
 ## Contribution
 ### Individual Responsibilities
-* **Project leader &  Lead Developer**
-* **Sensor Electronics Design**: Selected components, planned circuitry, and oversaw integration of internal electronic components for sensor functionality.
-* **Programming**: Developed sensor coding, established data transfer from sensors to the mobile app, and created static & networked games for the app.
+* **Project leader &  Lead Developer:** Led key hardware decisions and took primary responsibility for sensor electronics design and software development.
+* **Sensor Electronics Design:** Selected electronic components, designed the circuitry, and integrated internal components to enable color sensing.
+* **Programming:** Developed the sensor firmware, implemented data transfer between the sensor and mobile app, and built single-player and two-player online games.
 
 ### Collaborative Responsibilities
 *	Concept Development
